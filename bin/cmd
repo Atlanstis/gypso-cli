@@ -1,0 +1,4 @@
+#! /usr/bin/env node
+
+// 开发环境下 需执行 chmod 755 bin/cmd 命令
+require('../dist/main.js')
