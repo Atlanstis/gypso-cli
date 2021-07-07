@@ -3,7 +3,6 @@ import path from 'path'
 import symbol from 'log-symbols'
 import chalk from 'chalk'
 import { execCmd } from '../utils'
-import { updateJsonFile } from '../utils'
 
 export default async function (url) {
   const cwd = process.cwd()
@@ -16,13 +15,6 @@ export default async function (url) {
     )
   }
   await execCmd('git init')
-  // git@github.com:Atlanstis/gypso-cli.git
-  await updateJsonFile('package.json', {
-    repository: {
-      type: 'git',
-      url: url.replace('git@', 'https://')
-    }
-  })
   await execCmd('git add .')
   await execCmd(['git', 'commit', '-m', 'initialized'])
   await execCmd('git branch -M main')

@@ -27,14 +27,7 @@ async function _default(url) {
     console.log(_logSymbols.default.success, _chalk.default.green('The directory: .git has been removed!'));
   }
 
-  await (0, _utils.execCmd)('git init'); // git@github.com:Atlanstis/gypso-cli.git
-
-  await (0, _utils.updateJsonFile)('package.json', {
-    repository: {
-      type: 'git',
-      url: url.replace('git@', 'https://')
-    }
-  });
+  await (0, _utils.execCmd)('git init');
   await (0, _utils.execCmd)('git add .');
   await (0, _utils.execCmd)(['git', 'commit', '-m', 'initialized']);
   await (0, _utils.execCmd)('git branch -M main');

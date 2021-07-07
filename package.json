@@ -1,31 +1,27 @@
 {
-	"name": "gypso-cli",
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
-	"bin": {
-		"gypso": "./bin/cmd",
-		"gypso-cli": "./bin/cmd"
-	},
-	"scripts": {
-		"compile": "babel src -d dist",
-		"watch": "npm run compile -- --watch"
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.14.5",
-		"@babel/core": "^7.14.6",
-		"@babel/preset-env": "^7.14.7",
-		"chalk": "^4.1.1",
-		"commander": "^8.0.0",
-		"cross-spawn": "^7.0.3",
-		"download-git-repo": "^3.0.2",
-		"fs-extra": "^10.0.0",
-		"inquirer": "^8.1.1",
-		"log-symbols": "^4.1.0",
-		"ora": "^5.4.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com:Atlanstis/gypso-cli.git"
-	}
+  "name": "gypso-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "gypso": "./bin/cmd",
+    "gypso-cli": "./bin/cmd"
+  },
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "chalk": "^4.1.1",
+    "commander": "^8.0.0",
+    "cross-spawn": "^7.0.3",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.1.1",
+    "log-symbols": "^4.1.0",
+    "ora": "^5.4.1"
+  }
 }
