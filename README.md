@@ -1,5 +1,29 @@
 # gypso-cli
 
+## 安装
+
+```shell
+$ npm i gypso-cli -g
+```
+
+## 使用
+
+### 创建工程
+
+```shell
+$ gypso create <projectName> 
+// or
+$ gypso-ci create <projectName> 
+```
+
+## 链接到 github
+
+```shell
+$ gypso link <gitUrl>
+// or
+$ gypso-ci link <gitUrl>
+```
+
 ## 依赖
 
 - [commander](https://www.npmjs.com/package/commander)：命令行工具
